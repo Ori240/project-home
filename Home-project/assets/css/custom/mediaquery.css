@@ -1,0 +1,248 @@
+@media screen and (max-width: 1024px) {
+  .textarea > p:nth-child(2),
+  .textarea > p:nth-child(3) {
+    font-size: 26px;
+  }
+  .banner-carousel .container {
+    height: 46vh;
+  }
+  .bnr-text > p:nth-child(2),
+  .bnr-text > p:nth-child(3) {
+    font-size: 40px;
+  }
+  .bnr-text > a:nth-child(5),
+  .bnr-text > a:nth-child(6) {
+    padding: 12px 30px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .section_title {
+    font-size: 26px;
+  }
+  .tab_menu {
+    position: initial;
+  }
+  .tab_menu img {
+    max-width: 75px;
+  }
+  .nav-pills .nav-link {
+    font-size: 14px;
+    margin-right: 20px;
+  }
+  .testimonial_item .author_img {
+    max-width: 50px;
+    margin-right: 10px;
+  }
+  .testimonial_item .author_name h5 {
+    font-size: 16px;
+  }
+  .testimonial_item .author_name label {
+    font-size: 12px;
+  }
+  .testimonial_item .rating ul li {
+    font-size: 10px;
+  }
+  .testimonial_item .testim_info p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .upcoming_project_item {
+    padding: 30px;
+  }
+  .blog .blog_brif .blog_title h3 {
+    font-size: 16px;
+  }
+  .blog .blog_brif {
+    padding: 20px;
+  }
+  .call_to_action_inner {
+    padding: 40px 25px;
+    flex-flow: column;
+    row-gap: 30px;
+  }
+  .call_to_action_inner h1 {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .small-carousel {
+    width: 29%;
+  }
+  .facilities {
+    padding-top: 40px;
+  }
+  .facilities::before {
+    display: block;
+    position: relative;
+    width: 90%;
+    height: 200px;
+    text-align: center;
+    margin: 0px auto;
+  }
+  .facilities::after {
+    top: 0;
+    transform: translateX(-50%);
+  }
+  .table td,
+  .table th {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .section_title {
+    font-size: 30px;
+  }
+  .upcoming_project_info > h1 {
+    font-size: 24px;
+  }
+  .upcoming_project_area .btn_wrapper .orange-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .apartments_plan_info h2 {
+    font-size: 20px;
+  }
+  .apartments_info_list > ul li,
+  .apartments_plan_info p {
+    font-size: 14px;
+  }
+  .accordion .card-header h6 {
+    padding: 20px 60px 20px 20px;
+    font-size: 14px;
+  }
+  .accordion .card-header h6 i {
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    color: var(--primary-color);
+    line-height: 45px;
+  }
+  .catagory_item .catagory_icon {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 35px;
+  }
+  .search_place_info h6 {
+    font-size: 14px;
+  }
+  .search_place_info h4 {
+    font-size: 17px;
+  }
+  .call_to_action_inner h1 {
+    font-size: 26px;
+  }
+  .footer_about p {
+    font-size: 14px;
+  }
+  .footer_menu {
+    margin-bottom: 45px;
+  }
+  .footer_menu ul li {
+    margin-bottom: 13px;
+    font-size: 14px;
+  }
+  .copyright {
+    padding: 25px 10px 20px;
+  }
+  .copyright p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .copyright_menu {
+    text-align: center;
+    margin-top: 20px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .small-carousel {
+    width: 100%;
+  }
+  .banner-carousel .container {
+    height: 95vh;
+  }
+  .bnr-img {
+    position: relative;
+    width: 95%;
+    margin: 0px auto;
+  }
+  .bnr-text > p:nth-child(2),
+  .bnr-text > p:nth-child(3) {
+    font-size: 27px;
+  }
+  .bnr-text > p:nth-child(4),
+  .bnr-text > p:first-child {
+    font-size: 14px;
+  }
+  .bnr-text > a:nth-child(5),
+  .bnr-text > a:nth-child(6) {
+    padding: 12px 19px;
+    font-size: 14px;
+  }
+  .small-carousel {
+    right: auto;
+  }
+  .feature-heading {
+    font-size: 17px;
+  }
+  .feature-heading + p,
+  .textarea > p:last-child {
+    font-size: 14px;
+  }
+  .textarea > p:nth-child(2),
+  .textarea > p:nth-child(3) {
+    font-size: 24px;
+  }
+  .about {
+    padding: 50px 0px;
+  }
+  .facilities {
+    padding-top: 0px;
+  }
+  .facilities::before {
+    display: block;
+    position: relative;
+    width: 85%;
+    height: 200px;
+    text-align: center;
+    margin: 0px auto;
+  }
+  .facilities::after {
+    top: 70px;
+    width: 60px;
+    height: 60px;
+    font-size: 17px;
+  }
+  .services {
+    padding: 40px 0px;
+  }
+  .section_title {
+    font-size: 24px;
+  }
+  .search_place_info h6 {
+    font-size: 14px;
+  }
+  .search_place_info h4 {
+    font-size: 17px;
+  }
+  .btn_wrapper .big_btn {
+    padding: 15px 25px;
+    font-size: 15px;
+  }
+  .btn_wrapper .big_btn i {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .blog-carousel:hover .slick-next,
+  .search-place-carousel:hover .slick-next {
+    right: -50px;
+    opacity: 1;
+  }
+  .blog-carousel:hover .slick-prev,
+  .search-place-carousel:hover .slick-prev {
+    left: -50px;
+    opacity: 1;
+  }
+}

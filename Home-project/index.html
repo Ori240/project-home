@@ -1,0 +1,1979 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Bootstrap</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="Expires" CONTENT="0">
+  <meta http-equiv="Cache-Control" CONTENT="no-cache">
+  <meta http-equiv="Pragma" CONTENT="no-cache">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-reboot.min.css" type="text/css">
+
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/493bb225cf.js" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Animate On Scroll -->
+  <link rel="stylesheet" href="assets/css/aos/aos.css" type="text/css">
+
+  <!-- Animate.CSS -->
+  <link rel="stylesheet" href="assets/css/animate/animate.min.css" type="text/css">
+
+  <!-- Slick Slider -->
+  <link rel="stylesheet" href="assets/css/slick-slider/slick.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/slick-slider/slick-theme.css" type="text/css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/custom/style.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/custom/mediaquery.css" type="text/css">
+
+</head>
+
+<body>
+
+
+  <!-- Header ------------------------------------------------------------------------>
+
+  <header class="bg-white w-100" id="header">
+
+    <div class="container">
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/logo.png" alt="logo" />
+        </a>
+
+        <!-- Hamburger Icon -->
+        <button class="navbar-toggler border-0 pb-2" type="button" data-toggle="offcanvas" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <svg width="30" height="30" viewBox="0 0 100 100">
+            <path class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </button>
+
+        <!-- Main Navbar -->
+        <div class="navbar-collapse justify-content-lg-end offcanvas-collapse" id="navbarNav">
+
+          <ul class="navbar-nav align-items-lg-center d-none d-lg-flex">
+
+            <li class="nav-item active">
+              <a class="nav-link" href="#" data-title="Home"><span>Home</span></a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false"
+                data-title="About">
+                <span>about</span>
+              </a>
+
+              <div class="dropdown-menu d-lg-none">
+                <a class="dropdown-item" href="#">about</a>
+                <a class="dropdown-item" href="#">services</a>
+                <a class="dropdown-item" href="#">services details</a>
+                <a class="dropdown-item" href="#">aminities</a>
+                <a class="dropdown-item" href="#">portfolio</a>
+                <a class="dropdown-item" href="#">team details</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+
+              <ul class="desktop-dropdown list-unstyled d-none d-lg-block">
+                <li><a href="#">about</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">services details</a></li>
+                <li><a href="#">aminities</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">team details</a></li>
+              </ul>
+
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-title="Services"><span>services</span></a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false"
+                data-title="Projects"><span>projects</span></a>
+
+              <div class="dropdown-menu d-lg-none">
+                <a class="dropdown-item" href="#">apartment sketch</a>
+                <a class="dropdown-item" href="#">area properties</a>
+                <a class="dropdown-item" href="#">available spaces</a>
+                <a class="dropdown-item" href="#">explore neighbour</a>
+              </div>
+
+              <ul class="desktop-dropdown list-unstyled d-none d-lg-block">
+                <li><a href="#">apartment sketch</a></li>
+                <li><a href="#">area properties</a></li>
+                <li><a href="#">available spaces</a></li>
+                <li><a href="#">explore neighbour</a></li>
+              </ul>
+
+            <li class="nav-item">
+              <a class="nav-link" data-title="Contacts"><span>contacts</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="btn btn-link text-capitalize orange-btn" data-toggle="modal" data-target="#navmodal">click
+                me</a>
+
+              <div class="modal fade" id="navmodal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content border-0">
+
+                    <div class="modal-header border-0">
+                      <h5 class="modal-title text-capitalize font-weight-bolder text-white" id="exampleModalLabel">get a
+                        quote</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+
+                    <div class="modal-body">
+
+                      <form class="modal-form">
+                        <div class="form-group">
+                          <label class="font-weight-bold text-white">Name</label>
+                          <input type="email" class="form-control border-0" aria-describedby="emailHelp">
+                        </div>
+
+
+                        <div class="form-group">
+                          <label class="font-weight-bold text-white">Email Address</label>
+                          <input type="email" class="form-control border-0" aria-describedby="emailHelp">
+                          <small id="emailHelp" class="form-text text-white-50">We'll never share your email with anyone
+                            else.</small>
+                        </div>
+
+
+                        <div class="form-group">
+                          <label class="font-weight-bold text-white">Phone</label>
+                          <input type="email" class="form-control border-0" aria-describedby="emailHelp">
+                          <small id="emailHelp" class="form-text text-white-50">We'll never share your phone number with
+                            anyone else.</small>
+                        </div>
+                      </form>
+
+                    </div>
+
+                    <div class="modal-footer border-0">
+                      <button type="button" class="btn orange-btn border-0">Save changes</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </li>
+          </ul>
+
+          <!-- Mobile Navbar -->
+
+          <ul class="list-group list-group-flush d-lg-none m-nav">
+
+            <li class="list-group-item px-0">
+              <a href="index.html">home</a>
+            </li>
+
+            <li class="list-group-item px-0">
+              <div class="accordion" id="accordian-1">
+                <div class="card border-0">
+                  <div class="card-header p-0 position-relative" id="headingOne">
+
+                    <a class="btn btn-block text-left p-0 position-relative plus-btn" type="button"
+                      data-toggle="collapse" data-target="#dropdown-1" aria-expanded="true"
+                      aria-controls="dropdown-1">about</a>
+
+                  </div>
+
+                  <div id="dropdown-1" class="collapse" aria-labelledby="headingOne" data-parent="#accordian-1">
+                    <div class="card-body">
+                      <ul class="list-group list-group-flush">
+
+                        <li class="list-group-item px-0 py-2">
+                          <a href="#">about</a>
+                        </li>
+
+                        <li class="list-group-item px-0 py-2">
+                          <a href="#">services</a>
+                        </li>
+
+                        <li class="list-group-item px-0 py-2">
+                          <a href="#">services details</a>
+                        </li>
+
+                        <li class="list-group-item px-0 py-2">
+                          <a href="#">aminities</a>
+                        </li>
+
+                        <li class="list-group-item px-0 py-2">
+                          <a href="#">portfolio</a>
+                        </li>
+
+                        <li class="list-group-item px-0 py-2">
+                          <a href="#">team details</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+            </li>
+
+            <li class="list-group-item px-0">
+              <a href="#">services</a>
+            </li>
+
+            <li class="list-group-item px-0">
+              <a href="#">projects</a>
+            </li>
+
+            <li class="list-group-item px-0">
+              <a href="#">contacts</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+    </div>
+
+  </header>
+
+  <!-- Header End Here --------------------------------------------------------------->
+
+
+
+
+
+  <!-- Banner ------------------------------------------------------------------------>
+
+  <section class="banner">
+
+    <div class="banner-carousel">
+
+      <div>
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-12 mb-4 mb-sm-0">
+              <div class="bnr-text">
+                <p><i class="fa-solid fa-house"></i> Real Estate Agency</p>
+                <p class="font-weight-bolder">Find Your Dream</p>
+                <p class="font-weight-bolder">House By Us</p>
+                <p class="border-left border-dark pl-3 col-lg-7 text-black-50 mb-lg-5">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                </p>
+                <a href="#" type="button" class="btn btn-dark text-uppercase">our services</a>
+                <a href="#" type="button" class="btn btn-light text-uppercase shadow ml-3">learn more</a>
+              </div>
+            </div>
+
+            <div class="bnr-img">
+              <img src="assets/images/slide-1.jpg" alt="slide-1" />
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-12 mb-4 mb-sm-0">
+              <div class="bnr-text">
+                <p><i class="fa-solid fa-house"></i> Real Estate Agency</p>
+                <p class="font-weight-bolder">Find Your Dream</p>
+                <p class="font-weight-bolder">House By Us</p>
+                <p class="border-left border-dark pl-3 col-lg-7 text-black-50 mb-lg-5">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                </p>
+                <a href="#" type="button" class="btn btn-dark text-uppercase">our services</a>
+                <a href="#" type="button" class="btn btn-light text-uppercase shadow ml-3">learn more</a>
+              </div>
+            </div>
+
+            <div class="bnr-img">
+              <img src="assets/images/slide-2.jpg" alt="slide-2" />
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-12 mb-4 mb-sm-0">
+              <div class="bnr-text">
+                <p><i class="fa-solid fa-house"></i> Real Estate Agency</p>
+                <p class="font-weight-bolder">Find Your Dream</p>
+                <p class="font-weight-bolder">House By Us</p>
+                <p class="border-left border-dark pl-3 col-lg-7 text-black-50 mb-lg-5">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                </p>
+                <a href="#" type="button" class="btn btn-dark text-uppercase">our services</a>
+                <a href="#" type="button" class="btn btn-light text-uppercase shadow ml-3">learn more</a>
+              </div>
+            </div>
+
+            <div class="bnr-img">
+              <img src="assets/images/slide-3.jpg" alt="slide-3" />
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="small-carousel col-lg-3">
+
+      <div class="small-card">
+        <img src="assets/images/slide-1.jpg" class="img-thumbnail shadow" alt="" />
+      </div>
+
+      <div class="small-card">
+        <img src="assets/images/slide-2.jpg" class="img-thumbnail shadow" alt="" />
+      </div>
+
+      <div class="small-card">
+        <img src="assets/images/slide-3.jpg" class="img-thumbnail shadow" alt="" />
+      </div>
+
+      <div class="small-card">
+        <img src="assets/images/slide-1.jpg" class="img-thumbnail shadow" alt="" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Banner End Here --------------------------------------------------------------->
+
+
+
+
+  <!-- About Us ---------------------------------------------------------------------->
+
+  <section class="about">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6">
+          <figure class="mr-lg-4">
+            <img src="assets/images/image_1.png" class="img-fluid" alt="" />
+          </figure>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="textarea">
+            <p>About Us</p>
+            <p class="m-0 d-md-inline-block d-lg-block">Dream Living Spaces</p>
+            <p class=" d-md-inline-block d-lg-block">Setting New Build</p>
+            <p class="text-black-50 col-lg-11 pl-0">
+              Over 39,000 people work for us in more than 70 countries all over the This breadth of global coverage,
+              combined with specialist services
+            </p>
+          </div>
+
+          <div class="feature-box active">
+            <div class="row">
+              <div
+                class="col-lg-2 col-md-2 d-flex align-items-md-center align-items-lg-start justify-content-md-center justify-content-lg-start">
+                <figure>
+                  <img src="assets/images/house.png" class="img-fluid" alt="" />
+                </figure>
+              </div>
+              <div class="col-lg-10 col-md-10 pl-md-0">
+                <p class="feature-heading mb-1">The Perfect Residency</p>
+                <p class="text-black-50">Lorem ipsum dolor sit amet, consectetur adipisic do eiusmod tempor incididunt
+                  ut labore et</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-box my-3">
+            <div class="row">
+              <div
+                class="col-lg-2 col-md-2 d-flex align-items-md-center align-items-lg-start justify-content-md-center justify-content-lg-start">
+                <figure>
+                  <img src="assets/images/call-center-agent.png" class="img-fluid" alt="" />
+                </figure>
+              </div>
+              <div class="col-lg-10 col-md-10 pl-md-0">
+                <p class="feature-heading mb-1">Global Architect Experts</p>
+                <p class="text-black-50">Lorem ipsum dolor sit amet, consectetur adipisic do eiusmod tempor incididunt
+                  ut labore et</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div class="row">
+              <div
+                class="col-lg-2 col-md-2 d-flex align-items-md-center align-items-lg-start justify-content-md-center justify-content-lg-start">
+                <figure>
+                  <img src="assets/images/map.png" class="img-fluid" alt="" />
+                </figure>
+              </div>
+              <div class="col-lg-10 col-md-10 pl-md-0">
+                <p class="feature-heading mb-1">Built-in Storage Cupboards</p>
+                <p class="text-black-50">Lorem ipsum dolor sit amet, consectetur adipisic do eiusmod tempor incididunt
+                  ut labore et</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us End Here ------------------------------------------------------------->
+
+
+
+
+  <!-- Building Facilities ----------------------------------------------------------->
+
+  <section class="facilities">
+
+    <div class="container">
+      <div class="col-lg-6">
+        <div class="textarea mb-4 mt-4 mt-lg-0">
+          <p>Building Facilities</p>
+          <p class="m-0 d-md-inline-block d-lg-block">Making living spaces</p>
+          <p class=" d-md-inline-block d-lg-block">More Beautiful</p>
+          <p class="text-black-50 col-lg-11 pl-0">
+            Over 39,000 people work for us in more than 70 countries all over the This breadth of global coverage,
+            combined with specialist services
+          </p>
+        </div>
+        <ul class="list-unstyled d-flex flex-wrap text-black-50">
+          <li class="w-50 d-flex mt-4 pr-1">
+            <i class="fa-solid fa-check"></i>Living rooms are pre-wired for Surround
+          </li>
+          <li class="w-50 d-flex mt-4 pr-1">
+            <i class="fa-solid fa-check"></i>Luxurious interior design and amenities
+          </li>
+          <li class="w-50 d-flex mt-4 pr-1">
+            <i class="fa-solid fa-check"></i>Nestled in the Buckhead Vinings communities
+          </li>
+          <li class="w-50 d-flex mt-4 pr-1">
+            <i class="fa-solid fa-check"></i>Private balconies with stunning views
+          </li>
+          <li class="w-50 d-flex mt-4 pr-1">
+            <i class="fa-solid fa-check"></i>A rare combination of inspired architecture
+          </li>
+          <li class="w-50 d-flex mt-4 pr-1">
+            <i class="fa-solid fa-check"></i>Outdoor grilling with dining court
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Building Facilities End Here -------------------------------------------------->
+
+
+
+
+  <!-- Feature Area Strat -------------------------------------------------------------->
+
+  <section class="services bg-white">
+    <div class="container">
+      <div class="textarea mb-lg-4 mb-0 mt-lg-4 mt-0  mt-lg-0 text-center">
+        <p>Our Services</p>
+        <p class="m-0 d-md-inline-block d-lg-block">Our Main Focus</p>
+      </div>
+
+      <div class="row services-carousel">
+
+
+        <div class="col-md-4">
+          <div class="card text-center border-0">
+            <figure>
+              <img src="assets/images/21.png" alt="">
+            </figure>
+            <div class="card-body">
+              <h4 class="card-title">Buy a home</h4>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural lead-in to additional content. This
+                content is a little bit longer.</p>
+              </p>
+              <a class="animated-arrow" href="#">
+                <span class="the-arrow -left">
+                  <span class="shaft"></span>
+                </span>
+                <span class="main">
+                  <span class="text">Find A Home</span>
+                  <span class="the-arrow -right">
+                    <span class="shaft"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card text-center border-0">
+            <figure>
+              <img src="assets/images/22.png" alt="">
+            </figure>
+            <div class="card-body">
+              <h4 class="card-title">Rent a home</h4>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural lead-in to additional content. This
+                content is a little bit longer.</p>
+              </p>
+              <a class="animated-arrow" href="#">
+                <span class="the-arrow -left">
+                  <span class="shaft"></span>
+                </span>
+                <span class="main">
+                  <span class="text">Find A Home</span>
+                  <span class="the-arrow -right">
+                    <span class="shaft"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card text-center border-0">
+            <figure>
+              <img src="assets/images/23.png" alt="">
+            </figure>
+            <div class="card-body">
+              <h4 class="card-title">Sell a home</h4>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural lead-in to additional content. This
+                content is a little bit longer.</p>
+              </p>
+              <a class="animated-arrow" href="#">
+                <span class="the-arrow -left">
+                  <span class="shaft"></span>
+                </span>
+                <span class="main">
+                  <span class="text">Find A Home</span>
+                  <span class="the-arrow -right">
+                    <span class="shaft"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card text-center border-0">
+            <figure>
+              <img src="assets/images/22.png" alt="">
+            </figure>
+            <div class="card-body">
+              <h4 class="card-title">Rent a home</h4>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural lead-in to additional content. This
+                content is a little bit longer.</p>
+              </p>
+              <a class="animated-arrow" href="#">
+                <span class="the-arrow -left">
+                  <span class="shaft"></span>
+                </span>
+                <span class="main">
+                  <span class="text">Find A Home</span>
+                  <span class="the-arrow -right">
+                    <span class="shaft"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Area End ----------------------------------------------------------------->
+
+
+
+  <!-- Upcoming Project Area Strat ------------------------------------------------------>
+
+  <section class="upcoming_project_area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section_title_area">
+            <h6 class="section_subtitle text-white">Upcoming Projects</h6>
+            <h1 class="section_title text-white">Dream Living Space <br>Setting New Standards</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row project-carousel">
+        <div class="col-lg-12">
+          <div class="upcoming_project_item bg-white">
+            <div class="row">
+              <div class="col-lg-7">
+                <img src="assets/images/poject-img.jpg" alt="project-img" class="img-fluid">
+              </div>
+
+              <div class="col-lg-5 section_bg_1">
+                <div class="upcoming_project_info">
+                  <h6 class="font-weight-bold">About Projects</h6>
+                  <h1 class="font-weight-bold">Upcoming Projects</h1>
+                  <ul class="list-unstyled mb-0">
+                    <li>1. Project Name: <span>Quarter</span></li>
+                    <li>2. Project Type: <span>Apartment / Home</span></li>
+                    <li>3. Building Location: <span>New York, USA</span></li>
+                    <li>4. No. Of Apartments: <span>568</span></li>
+                    <li>5. Total Investment: <span>$14,500,00</span></li>
+                  </ul>
+                  <div class="btn_wrapper"><a href=" #" class="orange-btn btn btn_effect_1">Download
+                      Brochure</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12">
+          <div class="upcoming_project_item bg-white">
+            <div class="row">
+              <div class="col-lg-7">
+                <img src="assets/images/projet-2.jpg" alt="project-img" class="img-fluid">
+              </div>
+
+              <div class="col-lg-5 section_bg_1">
+                <div class="upcoming_project_info">
+                  <h6 class="font-weight-bold">About Projects</h6>
+                  <h1 class="font-weight-bold">Upcoming Projects</h1>
+                  <ul class="list-unstyled mb-0">
+                    <li>1. Project Name: <span>Quarter</span></li>
+                    <li>2. Project Type: <span>Apartment / Home</span></li>
+                    <li>3. Building Location: <span>New York, USA</span></li>
+                    <li>4. No. Of Apartments: <span>568</span></li>
+                    <li>5. Total Investment: <span>$14,500,00</span></li>
+                  </ul>
+                  <div class="btn_wrapper"><a href=" #" class="orange-btn btn btn_effect_1">Download
+                      Brochure</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12">
+          <div class="upcoming_project_item bg-white">
+            <div class="row">
+              <div class="col-lg-7">
+                <img src="assets/images/projet-3.jpg" alt="project-img" class="img-fluid">
+              </div>
+
+              <div class="col-lg-5 section_bg_1">
+                <div class="upcoming_project_info">
+                  <h6 class="font-weight-bold">About Projects</h6>
+                  <h1 class="font-weight-bold">Upcoming Projects</h1>
+                  <ul class="list-unstyled mb-0">
+                    <li>1. Project Name: <span>Quarter</span></li>
+                    <li>2. Project Type: <span>Apartment / Home</span></li>
+                    <li>3. Building Location: <span>New York, USA</span></li>
+                    <li>4. No. Of Apartments: <span>568</span></li>
+                    <li>5. Total Investment: <span>$14,500,00</span></li>
+                  </ul>
+                  <div class="btn_wrapper"><a href=" #" class="orange-btn btn btn_effect_1">Download
+                      Brochure</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Project Area End -------------------------------------------------------->
+
+
+
+  <!--Apartment Plans Section Start  ---------------------------------------------------->
+
+  <section class="apartment_plan">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section_title_area text-center">
+            <h6 class="section_subtitle">Apartment Sketch</h6>
+            <h1 class="section_title">Apartments Plan</h1>
+          </div>
+
+          <ul class="nav nav-pills" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-studio-tab" data-toggle="pill" data-target="#studio" type="button"
+                role="tab" aria-controls="pills-home" aria-selected="true">The Studio</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-deluxe-tab" data-toggle="pill" data-target="#deluxe"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Deluex Portion</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-penthouse-tab" data-toggle="pill" data-target="#penthouse"
+                type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Penthouse</button>
+            </li>
+
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-garden-tab" data-toggle="pill" data-target="#garden" type="button"
+                role="tab" aria-controls="pills-contact" aria-selected="false">Top Garden</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-double-tab" data-toggle="pill" data-target="#double" type="button"
+                role="tab" aria-controls="pills-contact" aria-selected="false">Double Height</button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade" id="studio" role="tabpanel" aria-labelledby="pills-studio-tab">
+              <div class="tab_content_inner">
+                <div class="row">
+
+                  <div class="col-lg-6">
+                    <div class="apartments_plan_info">
+                      <h2>Deluxe Portion</h2>
+                      <p>Enimad minim veniam quis nostrud exercitation ullamco laboris.
+                        Lorem ipsum dolor sit amet cons aetetur adipisicing elit sedo
+                        eiusmod tempor.Incididunt labore et dolore magna aliqua.
+                        sed ayd minim veniam.</p>
+                      <div class="apartments_info_list">
+                        <ul class="list-unstyled m-0">
+                          <li><label>Total Area</label> <span>2800 Sq. Ft</span></li>
+                          <li><label>Bedroom</label> <span>150 Sq. Ft</span></li>
+                          <li><label>Bathroom</label> <span>45 Sq. Ft</span></li>
+                          <li><label>Belcony/Pets</label> <span>Allowed</span></li>
+                          <li><label>Lounge</label> <span>650 Sq. Ft</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="apartment_plan_img"><img src="assets/images/plan-1.png" alt="plan" class="img-fluid">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade show active" id="deluxe" role="tabpanel" aria-labelledby="pills-deluxe-tab">
+              <div class="tab_content_inner">
+                <div class="row">
+
+                  <div class="col-lg-6">
+                    <div class="apartments_plan_info">
+                      <h2>Deluxe Portion</h2>
+                      <p>Enimad minim veniam quis nostrud exercitation ullamco laboris.
+                        Lorem ipsum dolor sit amet cons aetetur adipisicing elit sedo
+                        eiusmod tempor.Incididunt labore et dolore magna aliqua.
+                        sed ayd minim veniam.</p>
+                      <div class="apartments_info_list">
+                        <ul class="list-unstyled m-0">
+                          <li><label>Total Area</label> <span>2800 Sq. Ft</span></li>
+                          <li><label>Bedroom</label> <span>150 Sq. Ft</span></li>
+                          <li><label>Bathroom</label> <span>45 Sq. Ft</span></li>
+                          <li><label>Belcony/Pets</label> <span>Allowed</span></li>
+                          <li><label>Lounge</label> <span>650 Sq. Ft</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="apartment_plan_img"><img src="assets/images/plan-1.png" alt="plan" class="img-fluid">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="penthouse" role="tabpanel" aria-labelledby="pills-penthouse-tab">
+              <div class="tab_content_inner">
+                <div class="row">
+
+                  <div class="col-lg-6">
+                    <div class="apartments_plan_info">
+                      <h2>Deluxe Portion</h2>
+                      <p>Enimad minim veniam quis nostrud exercitation ullamco laboris.
+                        Lorem ipsum dolor sit amet cons aetetur adipisicing elit sedo
+                        eiusmod tempor.Incididunt labore et dolore magna aliqua.
+                        sed ayd minim veniam.</p>
+                      <div class="apartments_info_list">
+                        <ul class="list-unstyled m-0">
+                          <li><label>Total Area</label> <span>2800 Sq. Ft</span></li>
+                          <li><label>Bedroom</label> <span>150 Sq. Ft</span></li>
+                          <li><label>Bathroom</label> <span>45 Sq. Ft</span></li>
+                          <li><label>Belcony/Pets</label> <span>Allowed</span></li>
+                          <li><label>Lounge</label> <span>650 Sq. Ft</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="apartment_plan_img"><img src="assets/images/plan-1.png" alt="plan" class="img-fluid">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="garden" role="tabpanel" aria-labelledby="pills-garden-tab">
+              <div class="tab_content_inner">
+                <div class="row">
+
+                  <div class="col-lg-6">
+                    <div class="apartments_plan_info">
+                      <h2>Deluxe Portion</h2>
+                      <p>Enimad minim veniam quis nostrud exercitation ullamco laboris.
+                        Lorem ipsum dolor sit amet cons aetetur adipisicing elit sedo
+                        eiusmod tempor.Incididunt labore et dolore magna aliqua.
+                        sed ayd minim veniam.</p>
+                      <div class="apartments_info_list">
+                        <ul class="list-unstyled m-0">
+                          <li><label>Total Area</label> <span>2800 Sq. Ft</span></li>
+                          <li><label>Bedroom</label> <span>150 Sq. Ft</span></li>
+                          <li><label>Bathroom</label> <span>45 Sq. Ft</span></li>
+                          <li><label>Belcony/Pets</label> <span>Allowed</span></li>
+                          <li><label>Lounge</label> <span>650 Sq. Ft</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="apartment_plan_img"><img src="assets/images/plan-1.png" alt="plan" class="img-fluid">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="double" role="tabpanel" aria-labelledby="pills-double-tab">
+              <div class="tab_content_inner">
+                <div class="row">
+
+                  <div class="col-lg-6">
+                    <div class="apartments_plan_info">
+                      <h2>Deluxe Portion</h2>
+                      <p>Enimad minim veniam quis nostrud exercitation ullamco laboris.
+                        Lorem ipsum dolor sit amet cons aetetur adipisicing elit sedo
+                        eiusmod tempor.Incididunt labore et dolore magna aliqua.
+                        sed ayd minim veniam.</p>
+                      <div class="apartments_info_list">
+                        <ul class="list-unstyled m-0">
+                          <li><label>Total Area</label> <span>2800 Sq. Ft</span></li>
+                          <li><label>Bedroom</label> <span>150 Sq. Ft</span></li>
+                          <li><label>Bathroom</label> <span>45 Sq. Ft</span></li>
+                          <li><label>Belcony/Pets</label> <span>Allowed</span></li>
+                          <li><label>Lounge</label> <span>650 Sq. Ft</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="apartment_plan_img"><img src="assets/images/plan-1.png" alt="plan" class="img-fluid">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Appartment Plans Section End ----------------------------------------------------->
+
+
+
+  <!-- Search By Place Area Start -------------------------------------------------------->
+
+  <section class="search_place">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section_title_area">
+            <h6 class="section_subtitle">Area Properties</h6>
+            <h1 class="section_title">Find Your Dream House <br>Search By Area</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row search-place-carousel">
+
+
+        <div class="col-lg-4">
+          <div class="search_place_item">
+            <div class="search_place_img position-relative">
+              <img src="assets/images/place-1.jpg" alt="place" class="img-fluid">
+              <div class="search_place_badge">2 Properties</div>
+            </div>
+
+            <div class="search_place_info">
+              <h6><a href="#">New Yoork</a></h6>
+              <h4><a href="#">Pacific Heights Area</a></h4>
+              <a class="animated-arrow" href="#">
+                <span class="the-arrow -left">
+                  <span class="shaft"></span>
+                </span>
+                <span class="main">
+                  <span class="text">View Property</span>
+                  <span class="the-arrow -right">
+                    <span class="shaft"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="search_place_item">
+            <div class="search_place_img position-relative">
+              <img src="assets/images/place-2.jpg" alt="place" class="img-fluid">
+              <div class="search_place_badge">3 Properties</div>
+            </div>
+
+            <div class="search_place_info">
+              <h6><a href="#">Sedona, Arizona</a></h6>
+              <h4><a href="#">Noe Valley Zones</a></h4>
+              <a class="animated-arrow" href="#">
+                <span class="the-arrow -left">
+                  <span class="shaft"></span>
+                </span>
+                <span class="main">
+                  <span class="text">View Property</span>
+                  <span class="the-arrow -right">
+                    <span class="shaft"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="search_place_item">
+            <div class="search_place_img position-relative">
+              <img src="assets/images/place-3.jpg" alt="place" class="img-fluid">
+              <div class="search_place_badge">9 Properties</div>
+            </div>
+
+            <div class="search_place_info">
+              <h6><a href="#">San Francisco</a></h6>
+              <h4><a href="#">Mission District Area</a></h4>
+              <a class="animated-arrow" href="#">
+                <span class="the-arrow -left">
+                  <span class="shaft"></span>
+                </span>
+                <span class="main">
+                  <span class="text">View Property</span>
+                  <span class="the-arrow -right">
+                    <span class="shaft"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="search_place_item">
+            <div class="search_place_img position-relative">
+              <img src="assets/images/place-4.jpg" alt="place" class="img-fluid">
+              <div class="search_place_badge">3 Properties</div>
+            </div>
+
+            <div class="search_place_info">
+              <h6><a href="#">San Francisco</a></h6>
+              <h4><a href="#">Mission District Area</a></h4>
+              <a class="animated-arrow" href="#">
+                <span class="the-arrow -left">
+                  <span class="shaft"></span>
+                </span>
+                <span class="main">
+                  <span class="text">View Property</span>
+                  <span class="the-arrow -right">
+                    <span class="shaft"></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Search By Place Area Start -------------------------------------------------------->
+
+
+
+
+  <!-- Select Available Area Start ------------------------------------------------------->
+
+  <section class="select_available_area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section_title_area">
+            <h6 class="section_subtitle">Area Properties</h6>
+            <h1 class="section_title">Select Availability</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <table class="table m-0  table-responsive-md">
+            <thead>
+              <tr>
+                <td>Residence</td>
+                <td>Bedrooms</td>
+                <td>Bathrooms</td>
+                <td>SQ.FT</td>
+                <td>Rent Price</td>
+                <td>Details</td>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>TOWER NAME</td>
+                <td>3</td>
+                <td>3</td>
+                <td>1200</td>
+                <td>$3,500</td>
+                <td><a href="#">+ Avliable</a></td>
+              </tr>
+              <tr>
+                <td>TOWER NAME</td>
+                <td>3</td>
+                <td>3</td>
+                <td>1200</td>
+                <td>$3,500</td>
+                <td><a href="#">+ Avliable</a></td>
+              </tr>
+              <tr>
+                <td>TOWER NAME</td>
+                <td>3</td>
+                <td>3</td>
+                <td>1200</td>
+                <td>$3,500</td>
+                <td><a href="#">+ Avliable</a></td>
+              </tr>
+              <tr>
+                <td>TOWER NAME</td>
+                <td>3</td>
+                <td>3</td>
+                <td>1200</td>
+                <td>$3,500</td>
+                <td><a href="#">+ Avliable</a></td>
+              </tr>
+              <tr>
+                <td>TOWER NAME</td>
+                <td>3</td>
+                <td>3</td>
+                <td>1200</td>
+                <td>$3,500</td>
+                <td><a href="#">+ Avliable</a></td>
+              </tr>
+              <tr>
+                <td>TOWER NAME</td>
+                <td>3</td>
+                <td>3</td>
+                <td>1200</td>
+                <td>$3,500</td>
+                <td><a href="#">+ Avliable</a></td>
+              </tr>
+              <tr>
+                <td>TOWER NAME</td>
+                <td>3</td>
+                <td>3</td>
+                <td>1200</td>
+                <td>$3,500</td>
+                <td><a href="#">+ Avliable</a></td>
+              </tr>
+              <tr>
+                <td>TOWER NAME</td>
+                <td>3</td>
+                <td>3</td>
+                <td>1200</td>
+                <td>$3,500</td>
+                <td><a href="#">+ Avliable</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Select Available Area End --------------------------------------------------------->
+
+
+
+  <!-- Neighbour Area Start --------------------------------------------------------------->
+
+  <section class="neighbour">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section_title_area">
+            <h6 class="section_subtitle">Explore Neighbour</h6>
+            <h1 class="section_title">What’s In Neighbour <br>Explore Below</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="tab_wrapper position-relative">
+
+            <ul class="nav nav-pills tab_menu" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a href="#" class="nav-link" id="pills-studio-tab" data-toggle="pill" data-target="#tab-1" type="button"
+                  role="tab" aria-controls="pills-home" aria-selected="true"><img src="assets/images/tab-menu-1.jpg"
+                    alt=""></a>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <a href="#" class="nav-link" id="pills-studio-tab" data-toggle="pill" data-target="#tab-2" type="button"
+                  role="tab" aria-controls="pills-home" aria-selected="true"><img src="assets/images/tab-menu-2.jpg"
+                    alt=""></a>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <a href="#" class="nav-link" id="pills-studio-tab" data-toggle="pill" data-target="#tab-3" type="button"
+                  role="tab" aria-controls="pills-home" aria-selected="true"><img src="assets/images/tab-menu-3.jpg"
+                    alt=""></a>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+
+              <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="pills-tab">
+                <div class="tab_content_inner">
+                  <div class="row">
+
+                    <div class="col-lg-8">
+                      <div class="neighbour_img"><img src="assets/images/neighbour-1.jpg" alt="" class="img-fluid">
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="search_place_item">
+                        <div class="search_place_img position-relative">
+                          <img src="assets/images/place-5.jpg" alt="place" class="img-fluid">
+                          <div class="search_place_badge">2 Properties</div>
+                        </div>
+
+                        <div class="search_place_info">
+                          <h4><a href="#">Mission District Area</a></h4>
+                          <label><span>15000m</span> / 21 min. walk</label>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempor incididunt ut labore Enim
+                            ullamco laboris.</p>
+                          <a class="animated-arrow" href="#">
+                            <span class="the-arrow -left">
+                              <span class="shaft"></span>
+                            </span>
+                            <span class="main">
+                              <span class="text">View Property</span>
+                              <span class="the-arrow -right">
+                                <span class="shaft"></span>
+                              </span>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane" id="tab-2" role="tabpanel" aria-labelledby="pills-tab-2-tab">
+                <div class="tab_content_inner">
+                  <div class="row">
+
+                    <div class="col-lg-8">
+                      <div class="neighbour_img"><img src="assets/images/neighbour-2.jpg" alt="" class="img-fluid">
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="search_place_item">
+                        <div class="search_place_img position-relative">
+                          <img src="assets/images/place-6.jpg" alt="place" class="img-fluid">
+                          <div class="search_place_badge">2 Properties</div>
+                        </div>
+
+                        <div class="search_place_info">
+                          <h4><a href="#">Medical Hospital</a></h4>
+                          <label><span>15000m</span> / 21 min. walk</label>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempor incididunt ut labore Enim
+                            ullamco laboris.</p>
+                          <a class="animated-arrow" href="#">
+                            <span class="the-arrow -left">
+                              <span class="shaft"></span>
+                            </span>
+                            <span class="main">
+                              <span class="text">View Property</span>
+                              <span class="the-arrow -right">
+                                <span class="shaft"></span>
+                              </span>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="pills-tab-3-tab">
+                <div class="tab_content_inner">
+                  <div class="row">
+
+                    <div class="col-lg-8">
+                      <div class="neighbour_img"><img src="assets/images/neighbour-3.jpg" alt="" class="img-fluid">
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="search_place_item">
+                        <div class="search_place_img position-relative">
+                          <img src="assets/images/place-7.jpg" alt="place" class="img-fluid">
+                          <div class="search_place_badge">2 Properties</div>
+                        </div>
+
+                        <div class="search_place_info">
+                          <h4><a href="#">Children Playland</a></h4>
+                          <label><span>15000m</span> / 21 min. walk</label>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempor incididunt ut labore Enim
+                            ullamco laboris.</p>
+                          <a class="animated-arrow" href="#">
+                            <span class="the-arrow -left">
+                              <span class="shaft"></span>
+                            </span>
+                            <span class="main">
+                              <span class="text">View Property</span>
+                              <span class="the-arrow -right">
+                                <span class="shaft"></span>
+                              </span>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="faq_inner">
+            <div class="row">
+              <div class="col-lg-6">
+
+                <div class="accordion" id="accordionExample">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        University / College
+                      </h6>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate sapien nec
+                          sagittis.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                        aria-controls="collapseTwo">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        Medical / Hospital
+                      </h6>
+                    </div>
+
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate sapien nec
+                          sagittis.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="true" aria-controls="collapseThree">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        Railway Station
+                      </h6>
+                    </div>
+
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                      data-parent="#accordionExample">
+                      <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate sapien nec
+                          sagittis.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-lg-6">
+
+                <div class="accordion" id="accordionExample">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
+                        aria-controls="collapseFour">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        University / College
+                      </h6>
+                    </div>
+
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingOne"
+                      data-parent="#accordionExample">
+                      <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate sapien nec
+                          sagittis.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true"
+                        aria-controls="collapseFive">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        University / College
+                      </h6>
+                    </div>
+
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingTwo"
+                      data-parent="#accordionExample">
+                      <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate sapien nec
+                          sagittis.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true"
+                        aria-controls="collapseSix">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        University / College
+                      </h6>
+                    </div>
+
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingThree"
+                      data-parent="#accordionExample">
+                      <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                          labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate sapien nec
+                          sagittis.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Naighbour Area End ----------------------------------------------------------------->
+
+
+  <!-- Catagory Area Start ---------------------------------------------------------------->
+
+  <section class="catagory">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section_title_area text-center">
+            <h6 class="section_subtitle">Our Aminities</h6>
+            <h1 class="section_title">Building Aminities</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="catagory_item">
+            <a href="#">
+              <span class="catagory_icon"><i class="fas fa-car"></i></span>
+              <span class="catagory_number">01</span>
+              <h4>Parking Space</h4>
+              <p> Enimad minim veniam quis no exercitation ullamco lab</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="catagory_item">
+            <a href="#">
+              <span class="catagory_icon"><i class="fas fa-swimming-pool"></i></span>
+              <span class="catagory_number">02</span>
+              <h4>Swming Pool</h4>
+              <p> Enimad minim veniam quis no exercitation ullamco lab</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="catagory_item">
+            <a href="#">
+              <span class="catagory_icon"><i class="fas fa-shield-alt"></i></span>
+              <span class="catagory_number">03</span>
+              <h4>Privet Security</h4>
+              <p> Enimad minim veniam quis no exercitation ullamco lab</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="catagory_item">
+            <a href="#">
+              <span class="catagory_icon"><i class="fas fa-stethoscope"></i></span>
+              <span class="catagory_number">04</span>
+              <h4>Medical Center</h4>
+              <p> Enimad minim veniam quis no exercitation ullamco lab</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="catagory_item">
+            <a href="#">
+              <span class="catagory_icon"><i class="fa-solid fa-book"></i></span>
+              <span class="catagory_number">05</span>
+              <h4>Library Area</h4>
+              <p> Enimad minim veniam quis no exercitation ullamco lab</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="catagory_item">
+            <a href="#">
+              <span class="catagory_icon"><i class="fa-solid fa-bed"></i></span>
+              <span class="catagory_number">06</span>
+              <h4>King Size Beds</h4>
+              <p> Enimad minim veniam quis no exercitation ullamco lab</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="catagory_item">
+            <a href="#">
+              <span class="catagory_icon"><i class="fa-solid fa-house-chimney"></i></span>
+              <span class="catagory_number">07</span>
+              <h4>Smart Homes</h4>
+              <p> Enimad minim veniam quis no exercitation ullamco lab</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="catagory_item">
+            <a href="#">
+              <span class="catagory_icon"><i class="fa-solid fa-wifi"></i></span>
+              <span class="catagory_number">08</span>
+              <h4>Free Wi-Fi</h4>
+              <p> Enimad minim veniam quis no exercitation ullamco lab</p>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Catagory Area End ------------------------------------------------------------------>
+
+
+
+
+  <!-- Testimonial Area Start ------------------------------------------------------------>
+
+  <section class="testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section_title_area">
+            <h6 class="section_subtitle text-white">Client,s Testimonial</h6>
+            <h1 class="section_title text-white">See What,s Our Client <br>Says About Us</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row testimonial-carousel">
+        <div class="col-lg-6">
+          <div class="testimonial_item">
+            <div class="testim_info">
+              <div class="author_rating d-flex justify-content-between align-items-center">
+                <div class="author_info d-flex">
+                  <div class="author_img"><img src="assets/images/testim-author-1.jpg" alt=""></div>
+                  <div class="author_name">
+                    <h5>Kelian William</h5>
+                    <label>Selling Agents</label>
+                  </div>
+                </div>
+
+                <div class="rating">
+                  <ul class="list-unstyled m-0">
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                  </ul>
+                </div>
+              </div>
+
+              <p>
+                Precious ipsum dolor sit amet
+                consectetur adipisicing elit, sed dos
+                mod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad min
+                veniam, quis nostrud Precious ips
+                um dolor sit amet, consecte</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="testimonial_item">
+            <div class="testim_info">
+              <div class="author_rating d-flex justify-content-between align-items-center">
+                <div class="author_info d-flex">
+                  <div class="author_img"><img src="assets/images/testim-author-2.jpg" alt=""></div>
+                  <div class="author_name">
+                    <h5>Jacob William</h5>
+                    <label>Selling Agents</label>
+                  </div>
+                </div>
+
+                <div class="rating">
+                  <ul class="list-unstyled m-0">
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                  </ul>
+                </div>
+              </div>
+
+              <p>
+                Precious ipsum dolor sit amet
+                consectetur adipisicing elit, sed dos
+                mod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad min
+                veniam, quis nostrud Precious ips
+                um dolor sit amet, consecte</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="testimonial_item">
+            <div class="testim_info">
+              <div class="author_rating d-flex justify-content-between align-items-center">
+                <div class="author_info d-flex">
+                  <div class="author_img"><img src="assets/images/testim-author-1.jpg" alt=""></div>
+                  <div class="author_name">
+                    <h5>Jacob William</h5>
+                    <label>Selling Agents</label>
+                  </div>
+                </div>
+
+                <div class="rating">
+                  <ul class="list-unstyled m-0">
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                  </ul>
+                </div>
+              </div>
+
+              <p>
+                Precious ipsum dolor sit amet
+                consectetur adipisicing elit, sed dos
+                mod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad min
+                veniam, quis nostrud Precious ips
+                um dolor sit amet, consecte</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Area End -------------------------------------------------------------->
+
+
+
+
+  <!-- Blog Area Start ------------------------------------------------------------------->
+
+  <section class="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section_title_area text-center">
+            <h6 class="section_subtitle">News & Blogs</h6>
+            <h1 class="section_title">Leatest News Feeds</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row blog-carousel">
+        <div class="col-4">
+          <div class="blog_item">
+            <div class="blog_img"><a href="#" class="d-block overflow-hidden"><img src="assets/images/blog-img-1.jpg"
+                  alt="" class="img-fluid"></a></div>
+
+            <div class="blog_brif">
+              <div class="blog_meta">
+                <a href="#"><i class="fa-regular fa-user"></i>By :Admin</a>
+                <a href="#"><i class="fa-solid fa-tags"></i>Interior</a>
+              </div>
+
+              <div class="blog_title">
+                <h3><a href="#">The Most Inspiring Interior Design Of 2021</a></h3>
+              </div>
+
+              <div class="blog_btn d-flex align-items-center justify-content-between">
+                <span><i class="fa-solid fa-calendar-days"></i>July 23, 2021</span>
+                <a href="#" class="text-uppercase">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="blog_item">
+            <div class="blog_img"><a href="#" class="d-block overflow-hidden"><img src="assets/images/blog-img-2.jpg"
+                  alt="" class="img-fluid"></a></div>
+
+            <div class="blog_brif">
+              <div class="blog_meta">
+                <a href="#"><i class="fa-regular fa-user"></i>By :Admin</a>
+                <a href="#"><i class="fa-solid fa-tags"></i>Interior</a>
+              </div>
+
+              <div class="blog_title">
+                <h3><a href="#">The Most Inspiring Interior Design Of 2021</a></h3>
+              </div>
+
+              <div class="blog_btn d-flex align-items-center justify-content-between">
+                <span><i class="fa-solid fa-calendar-days"></i>July 23, 2021</span>
+                <a href="#" class="text-uppercase">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="blog_item">
+            <div class="blog_img"><a href="#" class="d-block overflow-hidden"><img src="assets/images/blog-img-3.jpg"
+                  alt="" class="img-fluid"></a></div>
+
+            <div class="blog_brif">
+              <div class="blog_meta">
+                <a href="#"><i class="fa-regular fa-user"></i>By :Admin</a>
+                <a href="#"><i class="fa-solid fa-tags"></i>Interior</a>
+              </div>
+
+              <div class="blog_title">
+                <h3><a href="#">The Most Inspiring Interior Design Of 2021</a></h3>
+              </div>
+
+              <div class="blog_btn d-flex align-items-center justify-content-between">
+                <span><i class="fa-solid fa-calendar-days"></i>July 23, 2021</span>
+                <a href="#" class="text-uppercase">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="blog_item">
+            <div class="blog_img"><a href="#" class="d-block overflow-hidden"><img src="assets/images/blog-img-4.jpg"
+                  alt="" class="img-fluid"></a></div>
+
+            <div class="blog_brif">
+              <div class="blog_meta">
+                <a href="#"><i class="fa-regular fa-user"></i>By :Admin</a>
+                <a href="#"><i class="fa-solid fa-tags"></i>Interior</a>
+              </div>
+
+              <div class="blog_title">
+                <h3><a href="#">The Most Inspiring Interior Design Of 2021</a></h3>
+              </div>
+
+              <div class="blog_btn d-flex align-items-center justify-content-between">
+                <span><i class="fa-solid fa-calendar-days"></i>July 23, 2021</span>
+                <a href="#" class="text-uppercase">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Area End ---------------------------------------------------------------------->
+
+
+
+  <!-- Call to Action Area Start ---------------------------------------------------------->
+
+  <section class="call_to_action position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="call_to_action_inner">
+            <div class="call_info text-white text-center text-lg-left">
+              <h1>Looking for a dream home?</h1>
+              <p class="m-0">We help you make the dream of new house a reality</p>
+            </div>
+            <div class="btn_wrapper m-0"><a href="#" class="btn big_btn">Explore Properties <i
+                  class="fa-solid fa-arrow-right ml-1"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Area End ------------------------------------------------------------>
+
+
+
+
+  <!-- Footer Start ----------------------------------------------------------------------->
+
+  <footer class="footer">
+    <div class="footer_top">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-3 col-md-6 col-sm-6 col-12">
+            <div class="footer_about">
+              <div class="f_logo mb-3"><img src="assets/images/logo-2.png" alt="f-logo"></div>
+
+              <p>Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy
+                text of the
+                printing.</p>
+
+              <div class="footer_address">
+                <ul class="list-unstyled m-0">
+                  <li><i class="fa-solid fa-location-dot"></i> <span>Brooklyn, New York, United States</span></li>
+                  <li><i class="fa-solid fa-phone"></i> <a href="tel:+0123-456789">+0123-456789</a></li>
+                  <li><i class="fa-regular fa-envelope"></i> <a href="milto:example@example.com">example@example.com</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="social_media">
+                <ul class="list-unstyled m-0 mt-4">
+                  <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-2 col-md-6 col-sm-6 col-12">
+            <div class="footer_menu text-white">
+              <h4>Company</h4>
+              <ul class="list-unstyled m-0">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">All Products</a></li>
+                <li><a href="#">Location Map</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-xl-2 col-md-6 col-sm-6 col-12">
+            <div class="footer_menu text-white">
+              <h4>Service</h4>
+              <ul class="list-unstyled m-0">
+                <li><a href="#">Order tracking</a></li>
+                <li><a href="#">Wish List</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Trams & Condition</a></li>
+                <li><a href="#">Promotional Offer</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-xl-2 col-md-6 col-sm-6 col-12">
+            <div class="footer_menu text-white">
+              <h4>Customer Care</h4>
+              <ul class="list-unstyled m-0">
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Wish List</a></li>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 col-sm-12 col-12">
+            <div class="f_newsletter footer_menu text-white ">
+              <h4>Newsletter</h4>
+              <p class="mb-4">Subscribe to our weekly Newsletter and receive updates via email.</p>
+              <form action="#" class="position-relative">
+                <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                <button type="submit"><i class="fa-solid fa-location-arrow"></i></button>
+              </form>
+              <h5>We Accept</h5>
+              <img src="assets/images/payment.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="container-fluid">
+        <div class="row text-white">
+          <div class="col-md-6 col-12">
+            <p class="m-0">All Rights Reserved @ Company 2023</p>
+          </div>
+          <div class="col-md-6 col-12">
+            <ul class="list-unstyled copyright_menu m-0">
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Claim</a></li>
+              <li><a href="#">Claim</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Go to Top -------------------------------------------------------------------------->
+
+  <a href="#" id="goTop"><i class="fa-solid fa-angle-left"></i></a>
+
+
+  <!-- Bootstrap JS -->
+  <script src="assets/js/bootstrap/jquery.slim.min.js" type="text/javascript"></script>
+  <script src="assets/js/bootstrap/bootstrap.bundle.min.js" type="text/javascript"></script>
+
+  <!-- Slick Slider -->
+  <script src="assets/js/slick-slider/slick.min.js" type="text/javascript"></script>
+
+  <!-- Animate On Scroll -->
+  <script src="assets/js/aos/aos.js" type="text/javascript"></script>
+
+  <!-- Custom JS -->
+  <script src="assets/js/custom/main.js" type="text/javascript"></script>
+
+</body>
+
+</html>
